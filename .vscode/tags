@@ -4,15 +4,18 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-bsobj	../pic.py	/^bsobj = BeautifulSoup(html, "html5lib")$/;"	kind:variable	line:10
+bsobj	../city.py	/^bsobj = BeautifulSoup(html, "html5lib")$/;"	kind:variable	line:10
 city.py	../city.py	1;"	kind:file	line:1
-city_name	../pic.py	/^        city_name = city_tag.get_text()$/;"	kind:variable	line:18
-city_tags	../pic.py	/^city_tags = bsobj.find("div", {"class": "fc-main clear"}).findChildren("a")$/;"	kind:variable	line:12
-city_url	../pic.py	/^        city_url = city_tag.get("href")$/;"	kind:variable	line:17
-get_city_dict	../main.py	/^def get_city_dict():$/;"	kind:function	line:1
+city_tags	../city.py	/^city_tags = bsobj.find("div", {"class": "fc-main clear"}).findChildren("a")$/;"	kind:variable	line:12
+ershoufang	../main.py	/^ershoufang = "\/ershoufang\/"$/;"	kind:variable	line:7
+get_bsobj	../house_info.py	/^def get_bsobj(url):$/;"	kind:function	line:9
+get_city_dict	../main.py	/^def get_city_dict():$/;"	kind:function	line:9
+get_district_dict	../main.py	/^def get_district_dict(url):$/;"	kind:function	line:18
 house_info.py	../house_info.py	1;"	kind:file	line:1
-html	../pic.py	/^html = requests.get(url).text$/;"	kind:variable	line:8
+html	../city.py	/^html = requests.get(url).text$/;"	kind:variable	line:8
 main.py	../main.py	1;"	kind:file	line:1
+page_num	../house_info.py	/^page_num = ['pg', 1]$/;"	kind:variable	line:7
 pic.py	../pic.py	1;"	kind:file	line:1
-url	../pic.py	/^url = "https:\/\/cd.lianjia.com\/"$/;"	kind:variable	line:6
-writ	../pic.py	/^    writ = csv.writer(f)$/;"	kind:variable	line:15
+run	../main.py	/^def run():$/;"	kind:function	line:31
+url	../city.py	/^url = "https:\/\/cd.lianjia.com\/"$/;"	kind:variable	line:6
+write_city	../city.py	/^def write_city():$/;"	kind:function	line:15
